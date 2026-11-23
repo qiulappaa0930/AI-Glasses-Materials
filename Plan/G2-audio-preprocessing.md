@@ -210,3 +210,21 @@ $D = '<实采原始 WAV 目录>'
 - `*_wearer.wav`、`*_partner_N.wav`：时间对齐的分轨
 - `*_segments.csv`：说话人时间轴、原始电平、增益
 - `*_report.png`：处理前后波形
+
+## 8. G2-06 试听材料交接
+
+已按 2026-10-15 第二批原声的 SHA-256 和文件长度匹配 [实采录音 ZIP](https://github.com/qiulappaa0930/AI-Glasses-Materials/releases/download/audio-materials-20261123/AI-Glasses-Field-Recordings-20261123.zip) 内的清单。ZIP 已包含下列 7 份原声。
+
+| 报告输入 | ZIP 内文件 |
+| --- | --- |
+| input-01.wav | G1/A.wav |
+| input-02.wav | G1/B.wav |
+| input-03.wav | G1/C.wav |
+| input-04.wav | G1/D.wav |
+| input-05.wav | G1/E.wav |
+| input-06.wav | G1/F.wav |
+| input-07.wav | G1/G.wav |
+
+优先用 `G1/F.wav`（`input-06.wav`）听背景人声和弱声段，再用 `G1/D.wav`（`input-04.wav`）听摩擦、碰撞与语音交界。`G1/C.wav`（`input-03.wav`）可作为小声对话者仍偏低的对照。原声、诊断输出与手机回放增益分别记录。
+
+本机已定位原声。对照试听还需同一次处理生成的 `input-06_balanced.wav`、`input-06_partner_1.wav` 和 `input-06_segments.csv`。先配齐这一组，即可按分段时间在原声和平衡版间比较可懂度、被放大的背景声与瞬态突响，并参考分轨核对相应段落。报告中的增益和自动聚类结果用于辅助试听。
